@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'main-app.dart';
 
 void main() {
   runApp(const GitHubFlutterProjectsAppMainScreen());
@@ -7,7 +8,6 @@ void main() {
 class GitHubFlutterProjectsAppMainScreen extends StatelessWidget {
   const GitHubFlutterProjectsAppMainScreen({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +15,8 @@ class GitHubFlutterProjectsAppMainScreen extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Center(child: Text('List of Flutter Projects for GitHub')),
+      home: GitHubFlutterProjectsAppListScreen(),
+      // const Center(child: Text('List of Flutter Projects for GitHub')),
     );
   }
 }
