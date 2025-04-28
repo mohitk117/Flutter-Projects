@@ -31,6 +31,17 @@ dependencies:
   flutter:
     sdk: flutter
 
+  sticky_headers: ^0.3.0+2
+  get: ^4.7.2
+  json_annotation: ^4.9.0
+  moment_dart: ^5.2.2
+  url_launcher: ^6.3.1
+  path_provider: ^2.1.5
+  font_awesome_flutter: ^10.8.0
+  flutter_staggered_grid_view: ^0.7.0
+  file_picker: ^10.1.2
+
+  
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
