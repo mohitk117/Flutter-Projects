@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sticky_headers/sticky_headers/widget.dart';
 import 'Apps/MaterialIconPreview/app.dart';
+import 'Apps/PlaylistExtractor/Screens/app.dart';
 
 class GitHubFlutterProjectsAppListScreen extends StatefulWidget {
   const GitHubFlutterProjectsAppListScreen({super.key});
@@ -98,4 +99,5 @@ List<FlutterApp> mainApps = [
     name: 'Material Icon List Preview App',
     app: MaterialIconPreviewAppScreen(),
   ),
+  FlutterApp(name: 'Playlist Extractor App', app: YouTubeLinkExtractorScreen()),
 ];
