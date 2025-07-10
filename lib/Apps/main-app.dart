@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sticky_headers/sticky_headers/widget.dart';
+import 'Apps/CanadianNOCEmploymentList/app.dart';
 import 'Apps/MaterialIconPreview/app.dart';
 import 'Apps/PlaylistExtractor/Screens/app.dart';
 import 'Apps/StockInformation/Screens/StockBarApp.dart';
@@ -15,9 +16,6 @@ class GitHubFlutterProjectsAppListScreen extends StatefulWidget {
 
 class _GitHubFlutterProjectsAppListScreenState
     extends State<GitHubFlutterProjectsAppListScreen> {
-  // @override
-  // void initState() {}
-
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -72,6 +70,7 @@ class _GitHubFlutterProjectsAppListScreenState
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
                       return ListTile(
+                        leading: Icon(Icons.arrow_circle_right),
                         title: Text(mainApps[index].name),
                         onTap: () {
                           Get.to(() => mainApps[index].app);
@@ -102,4 +101,5 @@ List<FlutterApp> mainApps = [
   ),
   FlutterApp(name: 'Playlist Extractor App', app: YouTubeLinkExtractorScreen()),
   FlutterApp(name: 'American Stock Information App', app: StockAppTabbedApp()),
+  FlutterApp(name: 'Canadian NOC Employment List App', app: NocListApp()),
 ];
